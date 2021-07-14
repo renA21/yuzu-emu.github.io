@@ -5,19 +5,19 @@ description: A guide designed to get you started with yuzu quickly.
 
 ## Table of Contents
 
-* [Introduction](../index.md)
-* [Prerequisites](../prerequisites/index.md)
+* [Introduction](../)
+* [Prerequisites](../prerequisites)
 * **Preparing the microSD Card**
-* [Booting into RCM](../boot-to-rcm/index.md)
-* [Booting into Hekate](../boot-to-hekate/index.md)
-* [Dumping Decryption Keys](../dump-keys/index.md)
-* [Backing up Switch NAND](../nand-backup/index.md)
-* [Dumping System Update Firmware](../dump-firmware/index.md)
-* [Dumping Games](../dump-games/index.md)
-* [Dumping Save Files](../dump-saves/index.md)
-* [Rebooting the Switch Back to its Original State](../reboot-to-stock/index.md)
-* [Running yuzu](running-yuzu/index.md)
-* [Mounting the microSD card to your computer in Hekate](../hekate-ums/index.md)
+* [Booting into RCM](../boot-to-rcm)
+* [Booting into Hekate](../boot-to-hekate)
+* [Dumping Decryption Keys](../dump-keys)
+* [Backing up Switch NAND](../nand-backup)
+* [Dumping System Update Firmware](../dump-firmware)
+* [Dumping Games](../dump-games)
+* [Dumping Save Files](../dump-saves)
+* [Rebooting the Switch Back to its Original State](../reboot-to-stock)
+* [Running yuzu](../running-yuzu)
+* [Mounting the microSD card to your computer in Hekate](../hekate-ums)
 
 ## Preparing the microSD Card
 
@@ -30,9 +30,7 @@ We will now prepare the microSD card.
 5. Place the `JKSV.nro` file inside the `switch` folder.
 6. Once done, eject the microSD card and insert it into your Nintendo Switch.
 
-{{< imgs
-    "./sd_template.png|Your SD card should look like this."
->}}
+[comment]: # ({{< imgs "./sd_template.png|Your SD card should look like this.">}})
 
 The root of your microSD card should look like this:
 ![microSD card root directory](sd_root.png)

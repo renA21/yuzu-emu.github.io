@@ -5,28 +5,30 @@ description: A guide designed to get you started with yuzu quickly.
 
 ## Table of Contents
 
-* [Introduction](../../index.md)
-* [Prerequisites](../1-prerequisites/index.md)
-* [Preparing the microSD Card](../2-prepare-sd-card/index.md)
-* [Booting into RCM](../3-boot-to-rcm/index.md)
-* [Booting into Hekate](../4-boot-to-hekate/index.md)
-* [Dumping Decryption Keys](../5-dump-keys/index.md)
-* [Backing up Switch NAND](../6-nand-backup/index.md)
-* [Dumping System Update Firmware](../7-dump-firmware/index.md)
-* [Dumping Games](../8-dump-games/index.md)
+* [Introduction](../)
+* [Prerequisites](../prerequisites)
+* [Preparing the microSD Card](../prepare-sd-card)
+* [Booting into RCM](../boot-to-rcm)
+* [Booting into Hekate](../boot-to-hekate)
+* [Dumping Decryption Keys](../dump-keys)
+* [Backing up Switch NAND](../nand-backup)
+* [Dumping System Update Firmware](../dump-firmware)
+* [Dumping Games](../dump-games)
 * **Dumping Save Files**
-* [Rebooting the Switch Back to its Original State](../10-reboot-to-stock/index.md)
-* [Running yuzu](11-running-yuzu/index.md)
-* [Mounting the microSD card to your computer in Hekate](../hekate-ums/index.md)
+* [Rebooting the Switch Back to its Original State](../reboot-to-stock)
+* [Running yuzu](../running-yuzu)
+* [Mounting the microSD card to your computer in Hekate](../hekate-ums)
 
 ## Dumping Save Files (Optional)
 
 We will now dump the games' save files from your switch to use in yuzu.
 
-1. Download [Checkpoint.nro](https://github.com/FlagBrew/Checkpoint/releases)
-2. Boot your Nintendo Switch into [RCM mode](#booting-into-rcm) (steps 2c. to 2f.) and make sure it is connected to your computer.
-3. Boot into [Hekate](#booting-into-hekate) (steps 3b. to 3c.)
-4. [Mount the SD card to your computer in Hekate](#mounting-the-microsd-card-to-your-computer-in-hekate) (steps 4a. to 4c.)
+1. Download [JKSV.nro](https://github.com/J-D-K/JKSV/releases/latest)
+2. Boot your Nintendo Switch into [RCM mode](../boot-to-rcm) (steps 3 to 6) and make sure it is connected to your computer.
+3. Boot into [Hekate](../boot-to-hekate) (steps 2 to 3).
+4. [Mount the SD card to your computer in Hekate](../hekate-ums) (steps 1 to 3).
+
+    [comment]: # (TODO: Adapt save file dumping instructions from Checkpoint to JKSV.)
 5. Navigate to your SD card drive and create a folder named `Checkpoint` within the `switch` folder of your SD card and place the `Checkpoint.nro` file inside it.
 6. Once you're done, [safely eject the SD card drive in your computer and return to the Hekate Home menu.](#mounting-the-microsd-card-to-your-computer-in-hekate) (steps 5a. to 5b.)
 7. Tap on `Payloads`. This will show a list of payloads.

@@ -5,32 +5,46 @@ description: A guide designed to get you started with yuzu quickly.
 
 ## Table of Contents
 
-* [Introduction](../../index.md)
-* [Prerequisites](../1-prerequisites/index.md)
-* [Preparing the microSD Card](../2-prepare-sd-card/index.md)
-* [Booting into RCM](../3-boot-to-rcm/index.md)
-* [Booting into Hekate](../4-boot-to-hekate/index.md)
-* [Dumping Decryption Keys](../5-dump-keys/index.md)
-* [Backing up Switch NAND](../6-nand-backup/index.md)
+* [Introduction](../)
+* [Prerequisites](../prerequisites)
+* [Preparing the microSD Card](../prepare-sd-card)
+* [Booting into RCM](../boot-to-rcm)
+* [Booting into Hekate](../boot-to-hekate)
+* [Dumping Decryption Keys](../dump-keys)
+* [Backing up Switch NAND](../nand-backup)
 * **Dumping System Update Firmware**
-* [Dumping Games](../8-dump-games/index.md)
-* [Dumping Save Files](../9-dump-saves/index.md)
-* [Rebooting the Switch Back to its Original State](../10-reboot-to-stock/index.md)
-* [Running yuzu](11-running-yuzu/index.md)
-* [Mounting the microSD card to your computer in Hekate](../hekate-ums/index.md)
+* [Dumping Games](../dump-games)
+* [Dumping Save Files](../dump-saves)
+* [Rebooting the Switch Back to its Original State](../reboot-to-stock)
+* [Running yuzu](../running-yuzu)
+* [Mounting the microSD card to your computer in Hekate](../hekate-ums)
 
 ## Dumping System Update Firmware
 
 Some games such as `Mario Kart 8 Deluxe` require the use of files found inside the `Nintendo Switch System Update Firmware` to be playable. In this step, we will now dump the firmware files from your Switch for use in yuzu.
 
-1. Boot your Nintendo Switch into [RCM mode](#booting-into-rcm) (steps 2c. to 2f.) and make sure it is connected to your computer.
-2. Boot into [Hekate](#booting-into-hekate) (steps 3b. to 3c.)
+1. Boot your Nintendo Switch into [RCM mode](../boot-to-rcm) (steps 3 to 6) and make sure it is connected to your computer.
+2. Boot into [Hekate](../boot-to-hekate) (steps 2 to 3).
 3. When it has successfully booted into the Hekate Home menu, tap on `Payloads`. This will show a list of payloads.
+
+    ![Payloads option](payloads_option.png)
 4. Tap on `TegraExplorer.bin` in the list of payloads.
+
+    ![TegraExplorer selection](tegraexplorer.png)
 5. After TegraExplorer has successfully booted, navigate through the menu using the `VOL+/VOL-` buttons to highlight and select `Dump Firmware` by pressing the `POWER` button.
-6. Once the dumping process is finished, the `.nca` files will be located in your SD card at `sd:/tegraexplorer/Firmware/` inside a folder with a name of the firmware revision.
+
+    ![Dump Firmware selection](dump_firmware.png)
+6. Once the dumping process is finished, the `.nca` files will be located in your microSD card at `sd:/tegraexplorer/Firmware/` inside a folder with a name of the firmware revision.
+
+    ![Finished dump](finished_dump.png)
 7. Press any button to return to the main menu.
-8. Select the `Reboot to bootloader/update.bin` option. (Alternatively, you can select the `reboot_payload.bin` option if `update.bin` is not available.) You should now be booted back into Hekate.
-9. [Mount the SD card to your computer in Hekate](#mounting-the-microsd-card-to-your-computer-in-hekate) (steps 4a. to 4c.)
-10. Navigate to your SD card drive and copy the contents in the firmware folder (step 8f.) to `%YUZU_DIR%/nand/system/Contents/registered`. Alternatively, you can write `%appdata%\yuzu\nand\system\Contents\registered` in the address bar of a file explorer. The `registered` folder should be full of `.nca` files.
-11. Once you're done copying, [safely eject the SD card drive in your computer and return to the Hekate Home menu.](#mounting-the-microsd-card-to-your-computer-in-hekate) (steps 5a. to 5b.)
+8. Select the `Reboot to bootloader/update.bin` option.
+
+    ![`Reboot to bootloader/update.bin` option](update.png)
+Alternatively, you can select the `Reboot to atmosphere/reboot_payload.bin` option if the `Reboot to bootloader/update.bin` is not available.
+
+    ![`Reboot to atmosphere/reboot_payload.bin` option](reboot_payload.png)
+You should now be booted back into Hekate.
+9. [Mount the SD card to your computer in Hekate](../hekate-ums) (steps 1 to 3).
+10. Navigate to your SD card drive and copy the contents in the `Firmware` folder (step 6) to `%appdata%\yuzu\nand\system\Contents\registered` in the address bar of the file explorer. If done correctly, the `registered` folder should have `219` `.nca` files as of Firmware version `12.1.0`.
+11. Once you're done copying, [safely eject the SD card drive in your computer and return to the Hekate Home menu](../hekate-ums) (steps 4 to 5).
