@@ -5,19 +5,20 @@ description: A guide designed to get you started with yuzu quickly.
 
 ## Table of Contents
 
-* [Introduction](../)
-* **Prerequisites**
-* [Preparing the microSD Card](../prepare-sd-card)
-* [Booting into RCM](../boot-to-rcm)
-* [Booting into Hekate](../boot-to-hekate)
-* [Dumping Decryption Keys](../dump-keys)
-* [Backing up Switch NAND](../nand-backup)
-* [Dumping System Update Firmware](../dump-firmware)
-* [Dumping Games](../dump-games)
-* [Dumping Save Files](../dump-saves)
-* [Rebooting the Switch Back to its Original State](../reboot-to-stock)
-* [Running yuzu](../running-yuzu)
-* [Mounting the microSD card to your computer in Hekate](../hekate-ums)
+* [Introduction](/quickstart/)
+* [**Prerequisites**](/quickstart/prerequisites/)
+* [Preparing the microSD Card](/quickstart/prepare-sd-card/)
+* [Booting into RCM](/quickstart/boot-to-rcm/)
+* [Booting into Hekate](/quickstart/boot-to-hekate/)
+* [Dumping Decryption Keys](/quickstart/dump-keys/)
+* [Backing up Switch NAND](/quickstart/nand-backup/)
+* [Dumping System Update Firmware](/quickstart/dump-firmware/)
+* [Dumping Games](/quickstart/dump-games/)
+* [Dumping Save Files](/quickstart/dump-saves/)
+* [Rebooting the Switch Back to its Original State](/quickstart/reboot-to-stock/)
+* [Running yuzu](/quickstart/running-yuzu/)
+* [Mounting the microSD card to your computer in Hekate](/quickstart/hekate-ums/)
+
 
 ## Prerequisites
 

@@ -5,7 +5,7 @@ description: A guide designed to get you started with yuzu quickly.
 
 ## Table of Contents
 
-* **Introduction**
+* [**Introduction**](/quickstart/)
   * [Hardware Requirements](#hardware-requirements)
     * [CPU](#cpu)
     * [Dedicated Graphics](#dedicated-graphics)
